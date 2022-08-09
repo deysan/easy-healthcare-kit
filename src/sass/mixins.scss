@@ -1,0 +1,21 @@
+@mixin container() {
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media #{$desktop-width} {
+    max-width: 1200px;
+    padding: 0;
+  }
+}
+
+@mixin center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin font-set($size, $line-height, $weight) {
+  font-size: $size;
+  line-height: $line-height;
+  font-weight: $weight;
+}
