@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'Avenir Next';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/AvenirNext-Medium.woff2') format('woff2'),
+    url('/fonts/AvenirNext-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Avenir Next';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/fonts/AvenirNext-Demi.woff2') format('woff2'),
+    url('/fonts/AvenirNext-Demi.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Avenir Next';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/AvenirNext-Bold.woff2') format('woff2'),
+    url('/fonts/AvenirNext-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/PlayfairDisplay-BoldItalic.woff2') format('woff2'),
+    url('/fonts/PlayfairDisplay-BoldItalic.woff') format('woff');
+}
