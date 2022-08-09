@@ -9,7 +9,208 @@
     <link rel="preload" href="css/style.css" as="style" />
   </head>
   <body>
-    <h1>Hello, World!</h1>
+    <header>
+      <div class="top-bar">
+        <span class="top-bar__text">We ship inside the US only</span>
+        <span class="top-bar__icon">[flag]</span>
+      </div>
+      <div class="header">
+        <button class="header__menu-btn" aria-label="Menu">Menu</button>
+        <nav class="header__navigation navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">About</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">How it works</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Blog</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Contacts</a>
+            </li>
+          </ul>
+          <ul class="header__actions user-actions">
+            <li class="user-actions__item">
+              <a href="#" class="user-actions__link btn">User</a>
+            </li>
+            <li class="user-actions__item">
+              <a href="#" class="user-actions__link btn">Get a Kit</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="promo">
+        <div class="promo__content">
+          <span class="promo__subtitle">Emphasize PrEP</span>
+          <h2 class="promo__title">
+            Replace awkward lab visits with at-home STI testing and treatment.
+          </h2>
+          <a href="#" class="promo__link btn">Get started</a>
+        </div>
+      </section>
+      <section class="insurance">
+        <ul class="insurance__list">
+          <li class="insurance__item">Logo</li>
+          <li class="insurance__item">Logo</li>
+          <li class="insurance__item">Logo</li>
+          <li class="insurance__item">Logo</li>
+        </ul>
+        <a href="#" class="insurance__link btn">Check insurance</a>
+      </section>
+      <section class="about">
+        <div class="about__content">
+          <h2 class="about__title">
+            Our mission is simple: to make healthcare accessible, affordable,
+            and easy to use.
+          </h2>
+          <p class="about__text">
+            STI rates are hitting record numbers, yet testing is lacking. We
+            want to fix this by providing a more discreet and convenient way of
+            maintaining sexual health for you. The easier it is to access and
+            learn about your health, the easier it is for you to take meaningful
+            action, whenever you need it.
+          </p>
+          <a href="#" class="about__link btn">Get started</a>
+        </div>
+      </section>
+      <section class="features">
+        <h2>Features</h2>
+        <div class="features__item features__item--one">
+          <h3 class="features__title">Speak to a doctor</h3>
+          <p class="features__desc">
+            Book a visit today and get in touch with a doctor through video. Our
+            team will confirm you’re in-network to make things easier.
+          </p>
+          <div class="features__pagination">1/3</div>
+        </div>
+        <div class="features__item features__item--two">
+          <h3 class="features__title">Your kit is mailed</h3>
+          <p class="features__desc">
+            After the appointment we'll mail you an STI kit to your home with
+            easy steps to follow. If there are any additional questions needed,
+            our medical team is here.
+          </p>
+          <a href="#" class="features__link btn">Get a kit</a>
+          <div class="features__pagination">2/3</div>
+        </div>
+        <div class="features__item features__item--three">
+          <h3 class="features__title">Get results</h3>
+          <p class="features__desc">
+            Order a test online, collect your sample at home, and then return
+            your sample to our lab. We’ll review it and send you results within
+            2-4 days. If positive, we’ll prescribe you a treatment plan to
+            pickup at the nearest pharmacy.
+          </p>
+          <a href="#" class="features__link btn">Get started</a>
+          <div class="features__pagination">3/3</div>
+        </div>
+      </section>
+      <section class="kits">
+        <h2>Kits</h2>
+        <div class="kits__item">
+          <h3 class="kits__title">PrEP Check</h3>
+          <p class="kits__desc">
+            HIV 1&2, Hep B & C, Creatinine (kidney function), Syphilis,
+            Chlamydia, Gonorrhoea Required quarterly with medication
+          </p>
+          <img src="#" alt="PrEP Check" class="kits--photo" />
+          <div class="kits__badge kits__badge--base">Coming soon</div>
+        </div>
+        <div class="kits__item">
+          <h3 class="kits__title">Full Panel Kit</h3>
+          <p class="kits__desc">
+            Hep B & C, Trich, Chlamydia, Gonorrhea, HIV, Syphillis,
+            Gonadotropin, HSVII, HcG, and HPV
+          </p>
+          <img src="#" alt="Full Panel Kit" class="kits--photo" />
+          <div class="kits__badge kits__badge--orange">Coming soon</div>
+        </div>
+        <div class="kits__item">
+          <h3 class="kits__title">Common Two</h3>
+          <p class="kits__desc">Chlamydia & Gonorrhoea</p>
+          <img src="#" alt="Common Two" class="kits--photo" />
+          <div class="kits__badge kits__badge--red">Coming soon</div>
+        </div>
+        <div class="kits__item">
+          <h3 class="kits__title">HIV & others</h3>
+          <p class="kits__desc">HIV 1&2, Hep B, & Liver function</p>
+          <img src="#" alt="HIV & others" class="kits--photo" />
+          <div class="kits__badge kits__badge--blue">Coming soon</div>
+        </div>
+      </section>
+      <section class="subscription">
+        <h2 class="subscription__title">
+          Join the Waitlist Your partner will appreciate you.
+        </h2>
+        <p class="subscription__text">
+          Sign up with your email address to receive news and updates.
+        </p>
+        <div class="subscription__form">
+          <input type="text" class="subscription__input" />
+          <button type="submit" class="subscription__btn">Subscribe</button>
+        </div>
+      </section>
+      <section class="socials">
+        <h2>Socials</h2>
+        <div class="socials__item">
+          <img src="#" alt="Spotify" class="socials__icon" />
+          <h3 class="socials__title">Better Safe than Horny</h3>
+          <p class="socials__text">With Carly and Josh</p>
+        </div>
+        <div class="socials__item">
+          <img src="#" alt="Tiktok" class="socials__icon" />
+          <h3 class="socials__title">Watch us on Tiktok</h3>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__content">
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">About</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">How it works</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">Blog</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">Contacts</a>
+          </li>
+        </ul>
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">Privacy Policy</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">Terms and Conditions</a>
+          </li>
+        </ul>
+        <div class="discover">
+          <h4 class="discover__title">Discover our Kits</h4>
+          <a href="#" class="discover__link btn">Get a Kit</a>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <ul class="socials__list">
+          <li class="socials__item">Podcast</li>
+          <li class="socials__item">TikTok</li>
+          <li class="socials__item">Instagram</li>
+        </ul>
+        <p class="copyright__text">© 2021 Copyright, All rights reserved</p>
+        <div class="subscription__form">
+          <input type="text" class="subscription__input" />
+          <button type="submit" class="subscription__btn">Subscribe</button>
+        </div>
+      </div>
+    </footer>
 
     <script src="js/script.js"></script>
   </body>
