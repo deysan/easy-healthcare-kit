@@ -1,0 +1,33 @@
+.header {
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  margin: 0 auto;
+  background-color: $color-white;
+  border-bottom: 1px solid $color-black;
+}
+
+.header__menu {
+  @include container();
+  display: flex;
+  height: 82px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__navigation {
+  display: none;
+}
+
+.top-bar {
+  @include center();
+  gap: 30px;
+  height: 38px;
+  background: linear-gradient(90deg, #274cd6 0%, #cf63c6 49.91%, #80d7c4 100%);
+}
+
+.top-bar__text {
+  color: white;
+  @include font-set(12px, 700, 16px);
+  text-transform: uppercase;
+}

@@ -14,8 +14,8 @@
   align-items: center;
 }
 
-@mixin font-set($size, $line-height, $weight) {
+@mixin font-set($size, $weight, $line-height) {
   font-size: $size;
-  line-height: $line-height;
   font-weight: $weight;
+  line-height: $line-height;
 }

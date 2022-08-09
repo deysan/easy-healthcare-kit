@@ -1,0 +1,50 @@
+.promo {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: repeat(2, 1fr);
+  padding-top: 120px;
+  background-image: linear-gradient(
+    270deg,
+    #cfcdce 0%,
+    #dadadc 44.29%,
+    #dedde2 100%
+  );
+}
+
+.promo__content {
+  @include center();
+  @include container();
+  flex-direction: column;
+  max-width: 520px;
+  gap: 20px;
+  padding-top: 45px;
+  text-align: center;
+}
+
+.promo__title {
+  @include font-set(44px, 700, 42px);
+
+  & .text-decor {
+    font-family: 'Playfair Display';
+    letter-spacing: -3px;
+  }
+
+  & .text-blue {
+    color: $color-blue;
+  }
+
+  & .text-red {
+    color: $color-red;
+  }
+}
+
+.promo__subtitle {
+  @include font-set(14px, 500, 19px);
+}
+
+.promo__image {
+  background-image: url('../img/promo-mobile.jpg');
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}

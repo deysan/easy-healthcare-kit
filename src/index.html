@@ -9,12 +9,12 @@
     <link rel="preload" href="css/style.css" as="style" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="top-bar">
         <span class="top-bar__text">We ship inside the US only</span>
         <span class="top-bar__icon">[flag]</span>
       </div>
-      <div class="header">
+      <div class="header__menu">
         <button class="header__menu-btn" aria-label="Menu">Menu</button>
         <nav class="header__navigation navigation">
           <ul class="navigation__list">
@@ -31,15 +31,19 @@
               <a href="#" class="navigation__link">Contacts</a>
             </li>
           </ul>
-          <ul class="header__actions user-actions">
-            <li class="user-actions__item">
-              <a href="#" class="user-actions__link btn">User</a>
-            </li>
-            <li class="user-actions__item">
-              <a href="#" class="user-actions__link btn">Get a Kit</a>
-            </li>
-          </ul>
         </nav>
+        <ul class="header__actions user-actions">
+          <!-- <li class="user-actions__item">
+            <a href="#" class="user-actions__link btn">User</a>
+          </li> -->
+          <li class="user-actions__item">
+            <a
+              href="#"
+              class="user-actions__link btn btn--small btn--shadow-black"
+              >Get a Kit</a
+            >
+          </li>
+        </ul>
       </div>
     </header>
 
@@ -48,10 +52,17 @@
         <div class="promo__content">
           <span class="promo__subtitle">Emphasize PrEP</span>
           <h2 class="promo__title">
-            Replace awkward lab visits with at-home STI testing and treatment.
+            Replace awkward lab visits with at-home
+            <span class="text-decor text-blue">STI&nbsp;testing</span> and
+            <span class="text-decor text-red">treatment</span>.
           </h2>
-          <a href="#" class="promo__link btn">Get started</a>
+          <a
+            href="#"
+            class="promo__link btn btn--big btn--sky btn--shadow-black"
+            >Get started</a
+          >
         </div>
+        <div class="promo__image"></div>
       </section>
       <section class="insurance">
         <ul class="insurance__list">
@@ -152,7 +163,7 @@
         </p>
         <div class="subscription__form">
           <input type="text" class="subscription__input" />
-          <button type="submit" class="subscription__btn">Subscribe</button>
+          <button type="submit" class="subscription__btn btn">Subscribe</button>
         </div>
       </section>
       <section class="socials">
@@ -207,7 +218,7 @@
         <p class="copyright__text">© 2021 Copyright, All rights reserved</p>
         <div class="subscription__form">
           <input type="text" class="subscription__input" />
-          <button type="submit" class="subscription__btn">Subscribe</button>
+          <button type="submit" class="subscription__btn btn">Subscribe</button>
         </div>
       </div>
     </footer>
