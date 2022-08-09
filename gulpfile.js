@@ -32,7 +32,11 @@ export const styles = () => {
   return gulp
     .src('src/sass/style.scss', { sourcemaps: true })
     .pipe(plumber())
-    .pipe(sass().on('error', sass.logError))
+    .pipe(
+      sass({
+        includePaths: ['node_modules']
+      }).on('error', sass.logError)
+    )
     .pipe(postcss([autoprefixer(), csso()]))
     .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());

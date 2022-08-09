@@ -16,6 +16,7 @@
     "gulp-plumber": "^1.2.1",
     "gulp-postcss": "^9.0.1",
     "gulp-terser": "^2.1.0",
+    "normalize.css": "^8.0.1",
     "postcss": "^8.4.16",
     "postcss-csso": "^6.0.0"
   },
