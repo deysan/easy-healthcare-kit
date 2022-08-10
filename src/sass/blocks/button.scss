@@ -1,6 +1,7 @@
 .btn {
   z-index: 10;
   display: inline-block;
+  width: max-content;
   padding: 15px;
   color: $color-black;
   text-align: center;
@@ -30,6 +31,10 @@
 
   &--salmon {
     background-color: $color-salmon;
+  }
+
+  &--pinky {
+    background-color: $color-pinky;
   }
 
   &--shadow-black {

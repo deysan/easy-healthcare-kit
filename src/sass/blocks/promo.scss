@@ -1,7 +1,6 @@
 .promo {
   display: grid;
-  min-height: 880px;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: 320px auto;
   padding-top: 120px;
   background-image: linear-gradient(
     270deg,
@@ -12,12 +11,13 @@
 }
 
 .promo__content {
-  @include center();
   @include container();
+  display: flex;
   flex-direction: column;
+  align-items: center;
   max-width: 520px;
   gap: 20px;
-  padding-top: 45px;
+  padding-top: 80px;
   text-align: center;
 }
 
@@ -27,8 +27,9 @@
 }
 
 .promo__image {
+  height: 375px;
   background-image: url('../img/promo-mobile.jpg');
-  background-position: center;
+  background-position: bottom center;
   background-repeat: no-repeat;
   background-size: auto 100%;
 }
