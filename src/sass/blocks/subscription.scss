@@ -1,11 +1,6 @@
 .subscription {
-  @include center();
-  @include container();
-  flex-direction: column;
-  gap: 10px;
   padding-top: 65px;
   padding-bottom: 65px;
-  text-align: center;
   background: linear-gradient(
     98.6deg,
     #d9cfff 0%,
@@ -13,6 +8,18 @@
     #dde6ef 100%
   );
   border-bottom: 1px solid $color-black;
+}
+
+.subscription__content {
+  @include center();
+  @include container();
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 120px;
+  text-align: center;
+  background: url('../img/subscription.svg');
+  background-repeat: no-repeat;
+  background-position: center top;
 }
 
 .subscription__title {
@@ -42,6 +49,7 @@
   width: 100%;
   padding: 15px;
   border: 1px solid $color-black;
+  border-radius: 0;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   outline: none;

@@ -1,0 +1,55 @@
+.socials {
+  display: grid;
+  grid-template-rows: 375px 375px;
+}
+
+.socials__item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  &--left {
+    @include container();
+    align-items: flex-start;
+    margin: 0;
+    padding-top: 180px;
+    background-image: url('../img/banana.png');
+    background-repeat: no-repeat;
+    background-position: center 30px;
+    background-size: 200px auto;
+    border-bottom: 1px solid $color-black;
+
+    & .socials__icon {
+      min-width: auto;
+    }
+  }
+
+  &--right {
+    padding-top: 40px;
+    align-items: center;
+    background-image: url('../img/phone.png'), url('../img/tik-tok-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center bottom, center;
+    background-size: auto 220px, cover;
+
+    & .socials__title {
+      color: $color-white;
+    }
+  }
+}
+
+.socials__icon {
+  display: flex;
+  width: 45px;
+  height: 45px;
+}
+
+.socials__title {
+  @include font-set(40px, 700, 36px);
+  letter-spacing: -3px;
+}
+
+.socials__text {
+  @include font-set(14px, 500, 25px);
+  letter-spacing: -0.02em;
+}
