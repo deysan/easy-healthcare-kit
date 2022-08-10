@@ -59,6 +59,7 @@
   width: 160px;
   height: 55px;
   color: $color-black;
+  @include font-set(16px, 600, 15px);
   background-image: url('../img/feature-badge.svg');
   background-size: contain;
   background-repeat: no-repeat;
