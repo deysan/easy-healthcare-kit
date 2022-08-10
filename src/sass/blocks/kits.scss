@@ -30,10 +30,14 @@
 }
 
 .kits__photo {
-  width: 223px;
-  height: 141px;
+  position: relative;
   margin-top: 40px;
-  object-fit: contain;
+
+  & img {
+    width: 223px;
+    height: 141px;
+    object-fit: contain;
+  }
 }
 
 .kits__badge {
@@ -67,5 +71,86 @@
   &--salmon {
     width: 140px;
     background-image: url('../img/kit-badge--salmon.svg');
+  }
+}
+
+.kits__photo-badge {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  background-repeat: no-repeat;
+}
+
+.kits__item-one {
+  & .kits__photo-badge {
+    &--urine {
+      top: 0;
+      left: 0;
+      background-image: url('../img/badge-urine.svg');
+      transform: translateX(-50%) translateY(-50%);
+    }
+    &--blood {
+      top: 0;
+      right: -50%;
+      background-image: url('../img/badge-blood.svg');
+      transform: translateX(-50%) translateY(-50%);
+    }
+    &--swab {
+      bottom: 0;
+      right: 0;
+      background-image: url('../img/badge-swab.svg');
+      transform: translateX(50%) translateY(50%);
+    }
+  }
+}
+
+.kits__item-two {
+  & .kits__photo-badge {
+    &--urine {
+      bottom: 0;
+      right: 0;
+      background-image: url('../img/badge-urine.svg');
+      transform: translateX(50%) translateY(-50%);
+    }
+    &--blood {
+      bottom: 0;
+      left: 0;
+      background-image: url('../img/badge-blood.svg');
+      transform: translateX(50%) translateY(50%);
+    }
+    &--swab {
+      top: 0;
+      left: -50%;
+      background-image: url('../img/badge-swab.svg');
+      transform: translateX(50%) translateY(-50%);
+    }
+  }
+}
+
+.kits__item-three {
+  & .kits__photo-badge {
+    &--blood {
+      left: 0;
+      bottom: 50%;
+      background-image: url('../img/badge-blood.svg');
+      transform: translateX(-50%) translateY(50%);
+    }
+  }
+}
+
+.kits__item-four {
+  & .kits__photo-badge {
+    &--urine {
+      bottom: 0;
+      right: 0;
+      background-image: url('../img/badge-urine.svg');
+      transform: translateX(50%) translateY(-50%);
+    }
+    &--swab {
+      top: 0;
+      left: -50%;
+      background-image: url('../img/badge-swab.svg');
+      transform: translateX(50%) translateY(-50%);
+    }
   }
 }
