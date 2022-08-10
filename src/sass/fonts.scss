@@ -33,3 +33,12 @@
   src: url('/fonts/PlayfairDisplay-BoldItalic.woff2') format('woff2'),
     url('/fonts/PlayfairDisplay-BoldItalic.woff') format('woff');
 }
+
+@font-face {
+  font-family: 'Monument Extended';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('/fonts/MonumentExtended-Ultrabold.woff2') format('woff2'),
+    url('/fonts/MonumentExtended-Ultrabold.woff') format('woff');
+}
