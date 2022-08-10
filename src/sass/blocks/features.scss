@@ -1,0 +1,66 @@
+.features__item {
+  position: relative;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  height: calc(100vh - 120px);
+  color: $color-white;
+  background-image: url('../img/features-bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 1px solid $color-black;
+
+  &--one {
+    .features__image {
+      background-image: url('../img/feature-one-desktop.png');
+    }
+  }
+  &--two {
+    .features__image {
+      background-image: url('../img/feature-two-desktop.png');
+    }
+  }
+  &--three {
+    .features__image {
+      background-image: url('../img/feature-three-desktop.png');
+    }
+  }
+}
+
+.features__content {
+  @include container();
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin: 0;
+  padding-top: 100px;
+}
+
+.features__title {
+  @include font-set(36px, 700, 38px);
+  letter-spacing: -3px;
+}
+
+.features__desc {
+  @include font-set(18px, 500, 29px);
+}
+
+.features__image {
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.features__pagination {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  @include center();
+  width: 160px;
+  height: 55px;
+  color: $color-black;
+  background-image: url('../img/feature-badge.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translateX(-50%);
+}
