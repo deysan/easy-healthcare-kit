@@ -1,0 +1,22 @@
+.insurance {
+  @include container();
+  @include center();
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 26px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.insurance__list {
+  @include center();
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 18px;
+}
+
+.insurance__item {
+  width: 160px;
+  height: 55px;
+}
