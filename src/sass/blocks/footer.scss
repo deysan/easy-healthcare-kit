@@ -72,6 +72,14 @@
   @include font-set(22px, 700, 32px);
 }
 
+.discover__link {
+  padding-right: 58px;
+  background-image: url('../img/emoji-box.png');
+  background-repeat: no-repeat;
+  background-size: 20px 21px;
+  background-position: 95px center;
+}
+
 @media #{$desktop-width} {
   .footer__content {
     @include container();

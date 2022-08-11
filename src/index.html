@@ -12,7 +12,13 @@
     <header class="header">
       <div class="top-bar">
         <span class="top-bar__text">We ship inside the US only</span>
-        <span class="top-bar__icon">[flag]</span>
+        <img
+          class="top-bar__icon"
+          width="16"
+          height="16"
+          src="../img/emoji-usa.png"
+          alt="USA"
+        />
       </div>
       <div class="header__menu">
         <button class="header__menu-btn" aria-label="Menu">Menu</button>
@@ -33,15 +39,26 @@
           </ul>
         </nav>
         <ul class="header__actions user-actions">
-          <!-- <li class="user-actions__item">
-            <a href="#" class="user-actions__link btn">User</a>
-          </li> -->
           <li class="user-actions__item">
             <a
               href="#"
-              class="user-actions__link btn btn--small btn--shadow-black"
+              class="user-actions__link user-actions__link--box btn btn--small btn--shadow-black"
               >Get a Kit</a
             >
+          </li>
+          <li class="user-actions__item user-actions__item--user">
+            <a
+              href="#"
+              class="user-actions__link user-actions__link--user btn btn--small btn--shadow-black"
+            >
+              <img
+                src="../img/user-icon.svg"
+                width="22"
+                height="22"
+                alt="User"
+                aria-label="User"
+              />
+            </a>
           </li>
         </ul>
       </div>

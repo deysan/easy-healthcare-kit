@@ -16,8 +16,41 @@
   align-items: center;
 }
 
-.header__navigation {
+.navigation {
   display: none;
+}
+
+.navigation__list {
+  display: flex;
+  gap: 25px;
+}
+
+.navigation__item {
+  @include font-set(14px, 600, 19px);
+}
+
+.user-actions {
+  display: flex;
+  gap: 15px;
+}
+
+.user-actions__item--user {
+  display: none;
+}
+
+.user-actions__link {
+  &--box {
+    padding-right: 58px;
+    background-image: url('../img/emoji-box.png');
+    background-repeat: no-repeat;
+    background-size: 20px 21px;
+    background-position: 95px center;
+  }
+
+  &--user {
+    @include center();
+    padding: 15px;
+  }
 }
 
 .top-bar {
@@ -31,4 +64,24 @@
   color: white;
   @include font-set(12px, 700, 16px);
   text-transform: uppercase;
+}
+
+.top-bar__icon {
+  min-width: auto;
+  width: 16px;
+  height: 16px;
+}
+
+@media #{$desktop-width} {
+  .navigation {
+    display: block;
+  }
+
+  .user-actions__item--user {
+    display: block;
+  }
+
+  .header__menu-btn {
+    display: none;
+  }
 }
