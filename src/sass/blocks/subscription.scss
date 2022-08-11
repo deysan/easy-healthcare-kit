@@ -20,6 +20,7 @@
   background: url('../img/subscription.svg');
   background-repeat: no-repeat;
   background-position: center top;
+  background-size: 300px auto;
 }
 
 .subscription__title {
@@ -58,4 +59,29 @@
   border-left: none;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+}
+
+@media #{$desktop-width} {
+  .subscription {
+    padding-top: 90px;
+    padding-bottom: 110px;
+  }
+
+  .subscription__content {
+    gap: 15px;
+    padding-top: 210px;
+    background-size: 540px auto;
+  }
+
+  .subscription__title {
+    @include font-set(60px, 700, 63px);
+  }
+
+  .subscription__subtitle {
+    @include font-set(48px, 700, 50px);
+  }
+
+  .subscription__form {
+    margin-top: 20px;
+  }
 }
