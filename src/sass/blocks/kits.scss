@@ -1,21 +1,20 @@
-.kits {
+.kits__wrapper {
   display: grid;
-  grid-template-rows: auto;
+  grid-template-rows: repeat(2, 400px);
 }
 
 .kits__item {
+  @include center();
   position: relative;
   border-bottom: 1px solid $color-black;
 }
 
 .kits__content {
   @include container();
-  @include center();
+  display: flex;
   flex-direction: column;
-  max-width: 390px;
-  gap: 18px;
-  padding-top: 70px;
-  padding-bottom: 70px;
+  align-items: center;
+  gap: 20px;
   text-align: center;
 }
 
@@ -25,6 +24,7 @@
 }
 
 .kits__desc {
+  max-width: 390px;
   @include font-set(14px, 500, 14px);
   letter-spacing: -0.03em;
 }
@@ -79,6 +79,18 @@
   width: 75px;
   height: 75px;
   background-repeat: no-repeat;
+
+  &--urine {
+    background-image: url('../img/badge-urine.svg');
+  }
+
+  &--blood {
+    background-image: url('../img/badge-blood.svg');
+  }
+
+  &--swab {
+    background-image: url('../img/badge-swab.svg');
+  }
 }
 
 .kits__item-one {
@@ -86,19 +98,16 @@
     &--urine {
       top: 0;
       left: 0;
-      background-image: url('../img/badge-urine.svg');
       transform: translateX(-50%) translateY(-50%);
     }
     &--blood {
       top: 0;
-      right: -50%;
-      background-image: url('../img/badge-blood.svg');
-      transform: translateX(-50%) translateY(-50%);
+      right: 0;
+      transform: translateX(50%) translateY(-50%);
     }
     &--swab {
       bottom: 0;
       right: 0;
-      background-image: url('../img/badge-swab.svg');
       transform: translateX(50%) translateY(50%);
     }
   }
@@ -109,20 +118,17 @@
     &--urine {
       bottom: 0;
       right: 0;
-      background-image: url('../img/badge-urine.svg');
       transform: translateX(50%) translateY(-50%);
     }
     &--blood {
       bottom: 0;
       left: 0;
-      background-image: url('../img/badge-blood.svg');
       transform: translateX(50%) translateY(50%);
     }
     &--swab {
       top: 0;
-      left: -50%;
-      background-image: url('../img/badge-swab.svg');
-      transform: translateX(50%) translateY(-50%);
+      left: 0;
+      transform: translateX(-50%) translateY(-50%);
     }
   }
 }
@@ -132,7 +138,6 @@
     &--blood {
       left: 0;
       bottom: 50%;
-      background-image: url('../img/badge-blood.svg');
       transform: translateX(-50%) translateY(50%);
     }
   }
@@ -143,14 +148,108 @@
     &--urine {
       bottom: 0;
       right: 0;
-      background-image: url('../img/badge-urine.svg');
       transform: translateX(50%) translateY(-50%);
     }
     &--swab {
       top: 0;
-      left: -50%;
-      background-image: url('../img/badge-swab.svg');
-      transform: translateX(50%) translateY(-50%);
+      left: 0;
+      transform: translateX(-50%) translateY(-50%);
+    }
+  }
+}
+
+@media #{$desktop-width} {
+  .kits__container {
+    border-bottom: 1px solid $color-black;
+  }
+
+  .kits__wrapper {
+    @include container();
+    display: grid;
+    grid-template-rows: 600px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .kits__item {
+    border: none;
+
+    &:nth-child(odd) {
+      border-right: 1px solid $color-black;
+    }
+  }
+
+  .kits__photo img {
+    width: 320px;
+    height: 200px;
+  }
+
+  .kits__photo-badge {
+    width: 85px;
+    height: 85px;
+  }
+
+  .kits__item-one {
+    & .kits__photo-badge {
+      &--urine {
+        top: 0;
+        left: 0;
+        transform: translateX(-50%) translateY(-50%);
+      }
+      &--blood {
+        top: 0;
+        right: -50%;
+        transform: translateX(-50%) translateY(-50%);
+      }
+      &--swab {
+        bottom: 0;
+        right: 0;
+        transform: translateX(50%) translateY(50%);
+      }
+    }
+  }
+
+  .kits__item-two {
+    & .kits__photo-badge {
+      &--urine {
+        bottom: 0;
+        right: 0;
+        transform: translateX(50%) translateY(-50%);
+      }
+      &--blood {
+        bottom: 0;
+        left: 0;
+        transform: translateX(50%) translateY(50%);
+      }
+      &--swab {
+        top: 0;
+        left: -50%;
+        transform: translateX(50%) translateY(-50%);
+      }
+    }
+  }
+
+  .kits__item-three {
+    & .kits__photo-badge {
+      &--blood {
+        left: 0;
+        bottom: 50%;
+        transform: translateX(-50%) translateY(50%);
+      }
+    }
+  }
+
+  .kits__item-four {
+    & .kits__photo-badge {
+      &--urine {
+        bottom: 0;
+        right: 0;
+        transform: translateX(50%) translateY(-50%);
+      }
+      &--swab {
+        top: 0;
+        left: -50%;
+        transform: translateX(50%) translateY(-50%);
+      }
     }
   }
 }
