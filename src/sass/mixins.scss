@@ -1,9 +1,30 @@
 @mixin container() {
   margin: 0 auto;
-  padding: 0 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media #{$desktop-width} {
-    max-width: 1240px;
+    max-width: $container-width;
+  }
+}
+
+@mixin container-right() {
+  margin: 0;
+  padding-left: 20px;
+  padding-right: 0;
+
+  @media #{$desktop-width} {
+    padding-left: calc((100% - $container-width) / 2 + 20px);
+  }
+}
+
+@mixin container-reset() {
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+
+  @media #{$desktop-width} {
+    max-width: auto;
   }
 }
 
