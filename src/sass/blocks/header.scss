@@ -54,22 +54,37 @@
 }
 
 .top-bar {
-  @include center();
-  gap: 30px;
   height: 38px;
   background: linear-gradient(90deg, #274cd6 0%, #cf63c6 49.91%, #80d7c4 100%);
+  overflow: hidden;
+}
+
+.top-bar__ticker {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  white-space: nowrap;
+  animation: ticker 10s linear infinite;
+}
+
+.top-bar__content {
+  display: flex;
+  flex-shrink: 0;
+  padding: 0 15px;
 }
 
 .top-bar__text {
   color: white;
   @include font-set(12px, 700, 16px);
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .top-bar__icon {
   min-width: auto;
   width: 16px;
   height: 16px;
+  margin-left: 30px;
 }
 
 @media #{$desktop-width} {
@@ -83,5 +98,15 @@
 
   .header__menu-btn {
     display: none;
+  }
+}
+
+@keyframes ticker {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(-200%, 0, 0);
   }
 }
