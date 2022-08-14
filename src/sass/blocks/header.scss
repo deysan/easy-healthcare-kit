@@ -25,6 +25,12 @@
   border-radius: 10px;
   cursor: pointer;
   outline: 0;
+  transition: all 0.2s ease;
+
+  &:hover,
+  &:focus {
+    background-color: darken($color: #f3f3e7, $amount: 5);
+  }
 }
 
 .header__menu-btn > span,
@@ -96,8 +102,8 @@
   @include font-set(14px, 600, 19px);
   transition: all 0.3s ease-out;
 
-  &:hover:not(:last-child),
-  &:focus:not(:last-child) {
+  &:hover,
+  &:focus {
     transform: translateY(-4px);
   }
 }
