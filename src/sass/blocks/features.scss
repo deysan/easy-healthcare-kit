@@ -1,11 +1,22 @@
+.features {
+  height: calc(100vh - 82px);
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: y mandatory;
+}
+
 .features__item {
-  position: relative;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
   color: $color-white;
   background-image: url('../img/features-bg.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   border-bottom: 1px solid $color-black;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 
   &--one {
     .features__image {
@@ -29,7 +40,7 @@
   @include container();
   display: grid;
   grid-template-rows: auto 1fr;
-  min-height: calc(100vh - 120px);
+  min-height: calc(100vh - 82px);
 }
 
 .features__content {

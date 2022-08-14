@@ -13,7 +13,7 @@ const mobileMenu = `
       <li class="navigation__item">
         <a href="#!" class="navigation__link">Blog</a>
       </li>
-      <li class="navigation__item user-actions__item">
+      <li class="user-actions__item">
         <a
           href="#!"
           class="user-actions__link user-actions__link--user btn btn--small btn--shadow-black"
@@ -37,7 +37,7 @@ const mobileMenu = `
 </div>`;
 
 menuOpenBtn.onclick = function () {
-  document.body.classList.toggle('no-scroll');
+  document.body.classList.add('no-scroll');
   document.body.insertAdjacentHTML('afterbegin', mobileMenu);
   const overlay = document.createElement('div');
   document.body.prepend(overlay);
@@ -51,9 +51,9 @@ menuOpenBtn.onclick = function () {
   }, 100);
 
   const onClose = () => {
-    if (menu) menu.remove();
-    if (overlay) overlay.remove();
-    document.body.classList.toggle('no-scroll');
+    menu.remove();
+    overlay.remove();
+    document.body.classList.remove('no-scroll');
   };
 
   document
