@@ -54,11 +54,28 @@
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   outline: none;
+  transition: all 0.1s ease;
+
+  &:focus {
+    border-color: #3898ec;
+  }
 }
+
 .subscription__btn {
   border-left: none;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+  transition: all 0.2s ease;
+
+  &:hover,
+  &:focus {
+    background-color: #f68d2e;
+    outline: 0;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
 }
 
 @media #{$desktop-width} {
