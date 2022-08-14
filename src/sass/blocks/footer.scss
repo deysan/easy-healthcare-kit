@@ -34,12 +34,6 @@
 
 .socials__link {
   @include font-set(16px, 600, 37px);
-  transition: all 0.3s ease-out;
-
-  &:hover,
-  &:focus {
-    transform: translateX(4px) translateY(-4px);
-  }
 
   &:not(:last-child)::after {
     content: '/';
