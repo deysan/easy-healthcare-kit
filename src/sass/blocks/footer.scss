@@ -34,10 +34,20 @@
 
 .socials__link {
   @include font-set(16px, 600, 37px);
+  transition: all 0.3s ease-out;
+
+  &:hover,
+  &:focus {
+    transform: translateX(4px) translateY(-4px);
+  }
 
   &:not(:last-child)::after {
     content: '/';
     margin-left: 20px;
+  }
+
+  & a {
+    padding: 10px 0;
   }
 }
 
@@ -55,6 +65,19 @@
   display: flex;
   gap: 45px;
   @include font-set(16px, 600, 16px);
+}
+
+.footer-nav__item {
+  transition: all 0.3s ease-out;
+
+  &:hover,
+  &:focus {
+    transform: translateY(-4px);
+  }
+}
+
+.footer-nav__link {
+  padding: 10px 0;
 }
 
 .copyright__text {

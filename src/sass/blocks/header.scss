@@ -94,6 +94,16 @@
 
 .navigation__item {
   @include font-set(14px, 600, 19px);
+  transition: all 0.3s ease-out;
+
+  &:hover:not(:last-child),
+  &:focus:not(:last-child) {
+    transform: translateY(-4px);
+  }
+}
+
+.navigation__link {
+  padding: 10px 0;
 }
 
 .navigation__close {
