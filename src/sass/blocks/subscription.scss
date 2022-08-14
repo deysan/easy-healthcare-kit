@@ -30,7 +30,7 @@
 }
 
 .subscription__subtitle {
-  font-family: 'Playfair Display';
+  font-family: 'Playfair Display', 'Arial', sans-serif;
   @include font-set(28px, 700, 29px);
   letter-spacing: -3px;
 }

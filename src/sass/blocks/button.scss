@@ -19,13 +19,13 @@
 
   &--small {
     padding: 16px 27px;
-    font-family: 'Avenir Next';
+    font-family: 'Avenir Next', 'Arial', sans-serif;
     @include font-set(14px, 600, 19px);
   }
 
   &--big {
     padding: 15px 36px;
-    font-family: 'Avenir Next';
+    font-family: 'Avenir Next', 'Arial', sans-serif;
     @include font-set(16px, 600, 22px);
   }
 

@@ -48,7 +48,7 @@
   width: 170px;
   height: 48px;
   color: $color-black;
-  font-family: 'Monument Extended';
+  font-family: 'Monument Extended', 'Arial', sans-serif;
   @include font-set(14px, 800, 13px);
   text-align: center;
   text-transform: uppercase;
