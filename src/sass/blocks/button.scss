@@ -1,0 +1,77 @@
+.btn {
+  z-index: 10;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: max-content;
+  padding: 15px;
+  color: $color-black;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  background-color: $color-white;
+  border: 1px solid $color-black;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.2s linear;
+
+  &--small {
+    padding: 16px 27px;
+    font-family: 'Avenir Next';
+    @include font-set(14px, 600, 19px);
+  }
+
+  &--big {
+    padding: 15px 36px;
+    font-family: 'Avenir Next';
+    @include font-set(16px, 600, 22px);
+  }
+
+  &--sky {
+    background-color: $color-sky;
+  }
+
+  &--salmon {
+    background-color: $color-salmon;
+  }
+
+  &--pinky {
+    background-color: $color-pinky;
+  }
+
+  &--shadow-black {
+    box-shadow: 4px 5px $color-black;
+
+    &:hover,
+    &:focus {
+      top: 2px;
+      left: 2px;
+      box-shadow: 2px 3px $color-black;
+    }
+
+    &:active {
+      top: 5px;
+      left: 4px;
+      box-shadow: 0px 0px $color-black;
+    }
+  }
+
+  &--shadow-white {
+    box-shadow: 4px 5px $color-white;
+
+    &:hover,
+    &:focus {
+      top: 2px;
+      left: 2px;
+      box-shadow: 2px 3px $color-white;
+    }
+
+    &:active {
+      top: 5px;
+      left: 4px;
+      box-shadow: 0px 0px $color-white;
+    }
+  }
+}

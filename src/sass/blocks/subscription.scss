@@ -1,0 +1,104 @@
+.subscription {
+  padding-top: 65px;
+  padding-bottom: 65px;
+  background: linear-gradient(
+    98.6deg,
+    #d9cfff 0%,
+    #ebf1ff 44.29%,
+    #dde6ef 100%
+  );
+  border-bottom: 1px solid $color-black;
+}
+
+.subscription__content {
+  @include center();
+  @include container();
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 120px;
+  text-align: center;
+  background-image: url('../img/subscription.svg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 300px auto;
+}
+
+.subscription__title {
+  color: $color-orangy;
+  @include font-set(36px, 700, 38px);
+  letter-spacing: -3px;
+}
+
+.subscription__subtitle {
+  font-family: 'Playfair Display';
+  @include font-set(28px, 700, 29px);
+  letter-spacing: -3px;
+}
+
+.subscription__text {
+  @include font-set(18px, 500, 29px);
+}
+
+.subscription__form {
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: 405px;
+}
+
+.subscription__input {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid $color-black;
+  border-radius: 0;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  outline: none;
+  transition: all 0.1s ease;
+
+  &:focus {
+    border-color: #3898ec;
+  }
+}
+
+.subscription__btn {
+  border-left: none;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  transition: all 0.2s ease;
+
+  &:hover,
+  &:focus {
+    background-color: #f68d2e;
+    outline: 0;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+}
+
+@media #{$desktop-width} {
+  .subscription {
+    padding-top: 90px;
+    padding-bottom: 110px;
+  }
+
+  .subscription__content {
+    gap: 15px;
+    padding-top: 210px;
+    background-size: 540px auto;
+  }
+
+  .subscription__title {
+    @include font-set(60px, 700, 63px);
+  }
+
+  .subscription__subtitle {
+    @include font-set(48px, 700, 50px);
+  }
+
+  .subscription__form {
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,49 @@
+.insurance {
+  @include container();
+  @include center();
+  padding-top: 40px;
+  padding-bottom: 45px;
+}
+
+.insurance__list {
+  @include center();
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  width: 100%;
+}
+
+.insurance__item {
+  width: 160px;
+  height: 55px;
+}
+
+.insurance__link {
+  margin-top: 15px;
+  flex-basis: 100%;
+  text-align: center;
+}
+
+@media #{$desktop-width} {
+  .insurance {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-top: 30px;
+    padding-bottom: 35px;
+  }
+
+  .insurance__list {
+    justify-content: space-between;
+    gap: 25px;
+  }
+
+  .insurance__item {
+    width: 188px;
+    height: 65px;
+  }
+
+  .insurance__link {
+    margin-top: 0;
+    flex-basis: auto;
+  }
+}

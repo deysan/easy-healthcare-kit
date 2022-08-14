@@ -1,0 +1,31 @@
+@mixin container() {
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media #{$desktop-width} {
+    max-width: $container-width;
+  }
+}
+
+@mixin container-reset() {
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+
+  @media #{$desktop-width} {
+    max-width: auto;
+  }
+}
+
+@mixin center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin font-set($size, $weight, $line-height) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line-height;
+}

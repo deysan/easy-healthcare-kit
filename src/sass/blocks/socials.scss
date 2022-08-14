@@ -1,0 +1,119 @@
+.socials__wrapper {
+  display: grid;
+  grid-template-rows: 375px 375px;
+}
+
+.socials__content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+}
+
+.socials__item {
+  &--left {
+    border-bottom: 1px solid $color-black;
+
+    .socials__content {
+      @include container();
+      align-items: flex-start;
+      margin: 0;
+      padding-top: 200px;
+      background-image: url('../img/banana.png');
+      background-repeat: no-repeat;
+      background-position: center 30px;
+      background-size: auto 180px;
+    }
+
+    & .socials__icon {
+      min-width: auto;
+    }
+  }
+
+  &--right {
+    background-image: url('../img/tik-tok-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .socials__content {
+      padding-top: 40px;
+      align-items: center;
+      background-image: url('../img/phone.png');
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      background-size: auto 220px;
+    }
+
+    & .socials__title {
+      color: $color-white;
+    }
+  }
+}
+
+.socials__icon {
+  display: flex;
+  width: 45px;
+  height: 45px;
+}
+
+.socials__title {
+  @include font-set(40px, 700, 36px);
+  letter-spacing: -3px;
+}
+
+.socials__text {
+  @include font-set(14px, 500, 25px);
+  letter-spacing: -0.02em;
+}
+
+@media #{$desktop-width} {
+  .socials__wrapper {
+    display: grid;
+    grid-template-rows: 790px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .socials__content {
+    gap: 20px;
+  }
+
+  .socials__item {
+    &--left {
+      border-bottom: none;
+
+      .socials__content {
+        padding-top: 440px;
+        margin-left: calc((100vw - $container-width) / 2);
+        background-position: center 90px;
+        background-size: auto 340px;
+        border-right: 1px solid $color-black;
+      }
+    }
+
+    &--right {
+      .socials__content {
+        padding-top: 70px;
+        margin-right: calc((100vw - $container-width) / 2);
+        background-size: auto 500px;
+      }
+
+      .socials__title {
+        @include font-set(52px, 700, 47px);
+      }
+    }
+  }
+
+  .socials__icon {
+    width: 85px;
+    height: 85px;
+  }
+
+  .socials__title {
+    @include font-set(70px, 700, 67px);
+  }
+
+  .socials__text {
+    @include font-set(22px, 500, 40px);
+  }
+}
