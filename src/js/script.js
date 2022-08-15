@@ -19,7 +19,7 @@ const mobileMenu = `
           class="user-actions__link user-actions__link--user btn btn--small btn--shadow-black"
         >
           <img
-            src="../img/user-icon.svg"
+            src="img/user-icon.svg"
             width="22"
             height="22"
             alt="User"
